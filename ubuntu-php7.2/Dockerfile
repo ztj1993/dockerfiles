@@ -1,4 +1,4 @@
-FROM ztj1993/images:ubuntu-base
+FROM ztj1993/image:ubuntu
 
 LABEL maintainer="Ztj <ztj1993@gmail.com>"
 

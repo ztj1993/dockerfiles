@@ -4,7 +4,7 @@ set -e
 
 echo "system starting......"
 
-docs_dir=${DOCSIFY_DOCS_DIR:-/docsify.docs}
+docs_dir=${DOCSIFY_DOCS_DIR:-/docs}
 echo "docs dir: ${docs_dir}"
 
 for doc_dir in $(ls ${docs_dir}); do

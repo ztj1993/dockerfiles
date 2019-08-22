@@ -6,8 +6,4 @@ ADD https://raw.githubusercontent.com/ztj1993/shell/master/apt-update.sh /tmp/ap
 
 RUN chmod +x /tmp/apt-update.sh \
   && bash /tmp/apt-update.sh \
-  && rm -rf /tmp/apt-update.sh \
-  && apt install -y sudo \
-  && apt install -y wget \
-  && apt install -y curl \
-  && apt install -y unzip
+  && rm -rf /tmp/apt-update.sh
