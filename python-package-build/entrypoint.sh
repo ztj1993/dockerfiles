@@ -35,8 +35,7 @@ if [[ "${PYPI_ENABLE}" == "true" ]]; then
       --password ${PYPI_PASSWORD} \
       dist/*
 
-    python -m pip install ${PACKAGE_NAME}
-    python -m pip uninstall ${PACKAGE_NAME}
+    python -m pip install ${PACKAGE_NAME}==${PACKAGE_VERSION}
 fi
 
 exec "$@"
