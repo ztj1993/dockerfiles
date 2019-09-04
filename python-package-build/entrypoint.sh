@@ -24,9 +24,6 @@ if [[ "${TEST_ENABLE}" == "true" ]]; then
       --username ${TEST_USERNAME} \
       --password ${TEST_PASSWORD} \
       dist/*
-
-    python -m pip install --index-url ${TEST_INDEX_URL} --no-deps ${PACKAGE_NAME}==${PACKAGE_VERSION}
-    python -m pip uninstall ${PACKAGE_NAME}
 fi
 
 if [[ "${PYPI_ENABLE}" == "true" ]]; then
@@ -34,8 +31,6 @@ if [[ "${PYPI_ENABLE}" == "true" ]]; then
       --username ${PYPI_USERNAME} \
       --password ${PYPI_PASSWORD} \
       dist/*
-
-    python -m pip install ${PACKAGE_NAME}==${PACKAGE_VERSION}
 fi
 
 exec "$@"
