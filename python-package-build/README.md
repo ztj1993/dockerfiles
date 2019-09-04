@@ -26,12 +26,12 @@ TEST_USERNAME=not_set
 TEST_PASSWORD=not_set
 PYPI_USERNAME=not_set
 PYPI_PASSWORD=not_set
-" | tee ~/python-package-build.env
+" | tee ~/.python-package-build
 
 docker run -it --rm -v $PWD:/app \
     -e TEST_ENABLE=true \
     -e PYPI_ENABLE=true \
-    --env-file ~/python-package-build.env \
+    --env-file ~/.python-package-build \
     ztj1993/image:python-package-build
 ```
 
