@@ -8,13 +8,16 @@
 - [DockerHub](https://hub.docker.com/r/ztj1993/image)
 
 ## 环境变量
-- 测试发布：`TEST_ENABLE=false`
-- 测试地址：`TEST_URL=https://test.pypi.org/legacy/`
-- 测试用户：`TEST_USERNAME=not_set`
-- 测试密码：`TEST_PASSWORD=not_set`
-- 正式发布：`PYPI_ENABLE=false`
-- 发布用户：`PYPI_USERNAME=not_set`
-- 发布密码：`PYPI_PASSWORD=not_set`
+- 测试发布
+  - 启用发布：`TEST_ENABLE=false`
+  - 上传地址：`TEST_UPLOAD_URL=https://test.pypi.org/legacy/`
+  - 索引地址：`TEST_INDEX_URL=https://test.pypi.org/simple/`
+  - 用户名称：`TEST_USERNAME=not_set`
+  - 用户密码：`TEST_PASSWORD=not_set`
+- 正式发布
+  - 启用发布：`PYPI_ENABLE=false`
+  - 用户名称：`PYPI_USERNAME=not_set`
+  - 用户密码：`PYPI_PASSWORD=not_set`
 
 ## 使用教程
 ```
@@ -33,6 +36,12 @@ docker run -it --rm -v $PWD:/app \
 ```
 
 ## 更新日志
+
+> 2019-09-04
+
+- 优化了变量定义
+- 优化了脚本执行
+- 优化了包生成及上传
 
 > 2019-09-03
 
