@@ -16,6 +16,8 @@ export PYPI_ENABLE=${TEST_ENABLE:-"false"}
 export PYPI_USERNAME=${PYPI_USERNAME:-"not_set"}
 export PYPI_PASSWORD=${PYPI_PASSWORD:-"not_set"}
 
+python setup.py install
+
 python setup.py bdist_wheel --build-number $(date +%Y%m%d%H%M%S)
 
 if [[ "${TEST_ENABLE}" == "true" ]]; then
