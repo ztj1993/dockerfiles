@@ -3,8 +3,8 @@
 这是一个 python 包构建容器，用于发布包。
 
 ## 相关链接
-- [README](https://github.com/ztj1993/dockerfiles/blob/master/python-package-build/README.md)
-- [GitHub](https://github.com/ztj1993/dockerfiles/tree/master/python-package-build)
+- [README](https://github.com/ztj1993/dockerfiles/blob/master/py-pkg-build/README.md)
+- [GitHub](https://github.com/ztj1993/dockerfiles/tree/master/py-pkg-build)
 - [DockerHub](https://hub.docker.com/r/ztj1993/image)
 
 ## 环境变量
@@ -26,13 +26,10 @@ TEST_USERNAME=not_set
 TEST_PASSWORD=not_set
 PYPI_USERNAME=not_set
 PYPI_PASSWORD=not_set
-" | tee ~/.python-package-build
+" | tee ~/.py-pkg-build
 
-docker run -it --rm -v $PWD:/app \
-    -e TEST_ENABLE=true \
-    -e PYPI_ENABLE=true \
-    --env-file ~/.python-package-build \
-    ztj1993/image:python-package-build
+docker run -it --rm -v $PWD:/app -e TEST_ENABLE=true --env-file ~/.py-pkg-build ztj1993/image:py-pkg-build
+docker run -it --rm -v $PWD:/app -e PYPI_ENABLE=true --env-file ~/.py-pkg-build ztj1993/image:py-pkg-build
 ```
 
 ## 更新日志
