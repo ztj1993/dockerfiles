@@ -13,7 +13,7 @@ export TEST_INDEX_URL=${TEST_INDEX_URL:-"https://test.pypi.org/simple/"}
 export TEST_USERNAME=${TEST_USERNAME:-"not_set"}
 export TEST_PASSWORD=${TEST_PASSWORD:-"not_set"}
 
-export PYPI_ENABLE=${TEST_ENABLE:-"false"}
+export PYPI_ENABLE=${PYPI_ENABLE:-"false"}
 export PYPI_USERNAME=${PYPI_USERNAME:-"not_set"}
 export PYPI_PASSWORD=${PYPI_PASSWORD:-"not_set"}
 
