@@ -5,7 +5,6 @@ set -e
 export PACKAGE_NAME=$(python setup.py --name)
 export PACKAGE_VERSION=$(python setup.py --version)
 echo "package: ${PACKAGE_NAME}==${PACKAGE_VERSION}"
-read -p "Enter to continue, please Ctrl + C at the end......"
 
 export TEST_ENABLE=${TEST_ENABLE:-"false"}
 export TEST_UPLOAD_URL=${TEST_UPLOAD_URL:-"https://test.pypi.org/legacy/"}
