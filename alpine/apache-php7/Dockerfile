@@ -7,7 +7,6 @@ ENV SERVER_ADMIN="you@example.com"
 ENV SERVER_ROOT="/var/www/localhost/htdocs"
 
 RUN apk search -qe php7-* | xargs apk add \
-  && apk add php7 \
   && sed -i "s@Require ip 127@Require ip 127 192 10@" /etc/apache2/conf.d/info.conf \
   && sed -i "s@AllowOverride None@AllowOverride All@" /etc/apache2/httpd.conf \
   && sed -i "s@AllowOverride none@AllowOverride all@" /etc/apache2/httpd.conf \
@@ -19,5 +18,6 @@ RUN apk search -qe php7-* | xargs apk add \
   && mkdir -p /run/apache2
 
 EXPOSE 80/tcp
+EXPOSE 443/tcp
 
 CMD ["/usr/sbin/httpd", "-DFOREGROUND"]
