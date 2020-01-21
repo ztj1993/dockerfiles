@@ -18,6 +18,11 @@ docker run -ti --rm ztj1993/image:alpine-base echo test
 
 ## 更新日志
 
+> 2020-01-21
+
+- 使用 alpine:3.11 版本
+- 将镜像标签改为 alpine-base
+
 > 2019-08-22
 
 - 初始构建
