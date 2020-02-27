@@ -1,8 +1,8 @@
-FROM elasticsearch:6.8.3
+FROM elasticsearch:7.5.1
 
 LABEL maintainer="Ztj <ztj1993@gmail.com>"
 
-ARG VERSION="6.8.3"
+ARG VERSION="7.5.1"
 
 RUN elasticsearch-plugin install -b analysis-icu
 

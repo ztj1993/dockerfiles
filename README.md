@@ -19,3 +19,8 @@ docker run -it --rm -v $PWD:/app ztj1993/image:php-composer init
 ```
 docker run -it --rm -v $PWD:/svn ztj1993/image:svn --version
 ```
+
+### uglifyjs
+```
+docker run -it --rm -v $PWD:/uglifyjs ztj1993/image:uglifyjs --compress --mangle -- input.js
+```
