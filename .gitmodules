@@ -1,0 +1,30 @@
+[submodule "sshd"]
+	path = sshd
+	url = https://github.com/ztj1993/docker-sshd.git
+[submodule "verdaccio"]
+	path = verdaccio
+	url = https://github.com/ztj1993/docker-verdaccio.git
+[submodule "pptpd"]
+	path = pptpd
+	url = https://github.com/ztj1993/docker-pptpd.git
+[submodule "webproc"]
+	path = webproc
+	url = https://github.com/ztj1993/docker-webproc.git
+[submodule "website-php5"]
+	path = website-php5
+	url = https://github.com/ztj1993/docker-website-php5.git
+[submodule "rttys"]
+	path = rttys
+	url = https://github.com/ztj1993/docker-rttys.git
+[submodule "fn-cli"]
+	path = fn-cli
+	url = https://github.com/ztj1993/docker-fn-cli.git
+[submodule "nuitka"]
+	path = nuitka
+	url = https://github.com/ztj1993/docker-nuitka.git
+[submodule "pypi-build-upload"]
+	path = pypi-build-upload
+	url = https://github.com/ztj1993/docker-pypi-build-upload.git
+[submodule "ubuntu-python"]
+	path = ubuntu-python
+	url = https://github.com/ztj1993/docker-ubuntu-python.git
