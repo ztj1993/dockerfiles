@@ -28,3 +28,6 @@
 [submodule "ubuntu-python"]
 	path = ubuntu-python
 	url = https://github.com/ztj1993/docker-ubuntu-python.git
+[submodule "volume-backup"]
+	path = volume-backup
+	url = https://github.com/ztj1993/docker-volume-backup.git

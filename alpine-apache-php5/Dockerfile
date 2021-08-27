@@ -2,9 +2,7 @@ FROM alpine:3.8
 
 LABEL maintainer="Ztj <ztj1993@gmail.com>"
 
-RUN echo "http://mirrors.aliyun.com/alpine/v3.8/main" > /etc/apk/repositories \
-  && echo "http://mirrors.aliyun.com/alpine/v3.8/community" >> /etc/apk/repositories \
-  && apk update \
+RUN apk update \
   && apk search -qe php5-* | xargs apk add \
   && sed -i 's/^#ServerName.*/ServerName localhost/' /etc/apache2/httpd.conf \
   && sed -i "s@Require ip 127@Require ip 127 192 10@" /etc/apache2/conf.d/info.conf \
