@@ -31,3 +31,6 @@
 [submodule "volume-backup"]
 	path = volume-backup
 	url = https://github.com/ztj1993/docker-volume-backup.git
+[submodule "website-php7"]
+	path = website-php7
+	url = https://github.com/ztj1993/docker-website-php7.git
