@@ -1,9 +1,6 @@
 [submodule "sshd"]
 	path = sshd
 	url = https://github.com/ztj1993/docker-sshd.git
-[submodule "verdaccio"]
-	path = verdaccio
-	url = https://github.com/ztj1993/docker-verdaccio.git
 [submodule "pptpd"]
 	path = pptpd
 	url = https://github.com/ztj1993/docker-pptpd.git
